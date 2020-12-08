@@ -24,7 +24,10 @@ namespace HcodeR.Domain.Entities
 
         private void ValidarNome()
         {
+            var maxCharacter = 100;
+
             if (Validate.IsNullOrEmpty(Nome)) throw new DomainException(Message.NullOrEmpty("Nome do cliente"));
+            if (Validate.IsMaxCharacter(Nome, maxCharacter)) throw new DomainException(Message.MaxCharacter("Nome do cliente", maxCharacter));
         }
 
         private void ValidarIdade()

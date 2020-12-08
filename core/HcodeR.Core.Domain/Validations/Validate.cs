@@ -10,6 +10,11 @@ namespace HcodeR.Core.Domain.Validations
             return string.IsNullOrEmpty(value);
         }
 
+        public static bool IsMaxCharacter(string value, int length)
+        {
+            return value.Length > length;
+        }
+
         public static bool IsLessThanOrEqualZero(int value)
         {
             return value <= 0;

@@ -18,6 +18,11 @@
             return $"{value} não pode ser nulo ou vazio";
         }
 
+        public static string MaxCharacter(string value, int length)
+        {
+            return $"{value} não pode ter mais de {length} caracteres";
+        }
+
         public static string LessThanOrEqualZero(string value)
         {
             return $"{value} não pode ser menor ou igual a zero";

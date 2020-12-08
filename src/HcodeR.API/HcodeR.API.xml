@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HcodeR.API</name>
+    </assembly>
+    <members>
+        <member name="M:HcodeR.API.Controllers.v1.ClienteController.ListarClientes(HcodeR.Application.Dtos.Pagination.PaginationFilterDto)">
+            <summary>
+            Lista as clientes com filtro e paginação
+            </summary>
+            <param name="paginationFilterDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HcodeR.API.Controllers.v1.ClienteController.ObterClientePorId(System.Guid)">
+            <summary>
+            Obtém a cliente por id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HcodeR.API.Controllers.v1.ClienteController.AdicionarCliente(HcodeR.Application.Dtos.Command.ClienteCommandDto)">
+            <summary>
+            Adiciona uma cliente
+            </summary>
+            <param name="clienteDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HcodeR.API.Controllers.v1.ClienteController.AtualizarCliente(System.Guid,HcodeR.Application.Dtos.Command.ClienteCommandDto)">
+            <summary>
+            Atualiza uma cliente
+            </summary>
+            <param name="clienteDto"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HcodeR.API.Controllers.v1.ClienteController.ExcluirCliente(System.Guid)">
+            <summary>
+            Exclui uma cliente
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

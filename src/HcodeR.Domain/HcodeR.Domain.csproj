@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\HcodeR.Core.Domain\HcodeR.Core.Domain.csproj" />
+    <ProjectReference Include="..\HcodeR.Crosscutting\HcodeR.Crosscutting.csproj" />
+  </ItemGroup>
+
+</Project>
